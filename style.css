@@ -1,0 +1,1242 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   background: rgba(0, 0, 0, 0.56);
+   color: white;
+   font-size: 17px;
+   font-weight: 800;
+   height:50px;
+}
+
+.fa-bolt {
+   color: lime;
+}
+
+.firstbtn {
+   background: lime;
+   color: black;
+   padding: 8px;
+}
+
+.bgimg {
+   background: url(./images/background-img.jpg) no-repeat;
+   width: 100%;
+   height: 700px;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+}
+
+.layout {
+   background: rgba(0, 0, 0, 0.192);
+   height: 700px;
+   width: 100%;
+}
+
+
+.container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.247);
+   position: sticky;
+   top: 0;
+   height:70px;
+}
+
+
+.mainmenu {
+   display: flex;
+   gap: 25px;
+}
+
+.container img {
+   width: 90px;
+   height: 90px;
+}
+
+.mainmenu li {
+   list-style: none;
+}
+
+.mainmenu li a {
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+
+
+.dropdown-home {
+   position:relative;
+}
+
+.dropmenu-home {
+   position:absolute;
+   width:250px;
+   background:#ffffffe4; 
+   display:none; 
+   padding:20px;
+   top:20px;
+   right:5px;
+}
+
+.dropmenu-home li a {
+   color:black;
+   font-size:12x;
+}
+
+.dropmenu-home li {
+   padding:5px 0;
+}
+
+.dropdown-home:hover .dropmenu-home  {
+   display:block;
+}
+   
+
+.dropmenu-home li:hover  a {
+   border-bottom:2px solid navy;
+}
+
+.dropdown-menubar {
+   position:relative;
+}
+
+.dropmenu-menubar {
+   position:absolute;
+   width:190px;
+   background:#ffffffee; 
+   display:none; 
+   padding:20px;
+   top:20px;
+   right:5px;
+}
+
+.dropmenu-menubar li a {
+   color:black;
+   font-size:12x;
+}
+
+.dropmenu-menubar li {
+   padding:5px 0;
+}
+
+.dropdown-menubar:hover .dropmenu-menubar {
+   display:block;
+}
+
+.dropmenu-menubar li:hover a {
+   border-bottom:2px solid goldenrod;
+}
+
+
+.dropdown-reservation {
+   position: relative;
+}
+
+.dropmenu-reservation {
+   position:absolute;
+   width:250px;
+   background:#ffffffd5; 
+   display:none; 
+   padding:20px;
+   top:20px;
+   right:5px;
+}
+
+.dropmenu-reservation li a {
+   color:black;
+   font-size:12x;
+}
+
+.dropmenu-reservation li {
+   padding:5px 0;
+}
+
+.dropdown-reservation:hover .dropmenu-reservation {
+   display: block;
+}
+
+.dropmenu-reservation li:hover a {
+   border-bottom:2px solid seagreen;
+}
+
+.dropdown-pages {
+   position: relative;
+}
+
+.dropmenu-pages {
+   position:absolute;
+   width:180px;
+   background:#fffffff1; 
+   display:none; 
+   padding:20px;
+   top:20px; 
+   right:5px;
+}
+
+.dropmenu-pages li a {
+   color:black;
+   font-size:12x;
+}
+
+.dropmenu-pages li {
+   padding:5px 0;
+}
+
+.dropdown-pages:hover .dropmenu-pages {
+   display: block;
+}
+
+.dropmenu-pages li:hover a {
+   border-bottom:2px solid blueviolet;
+
+}
+
+.dropdown-blog {
+   position: relative;
+}
+
+.dropmenu-blog {
+   position:absolute;
+   width:200px;
+   background:#ffffffd6; 
+   display:none; 
+   padding:20px;
+   top:20px;
+   right:5px;
+}
+
+.dropmenu-blog li a {
+   color:black;
+   font-size:12x;
+}
+
+.dropmenu-blog li {
+   padding:5px 0;
+}
+
+.dropdown-blog:hover .dropmenu-blog {
+   display: block;
+}
+
+.dropmenu-blog li:hover a {
+   border-bottom:2px solid navy;
+}
+
+
+.snddropdown-blog {
+   position: relative;
+}
+
+.snddropmenu-blog {
+   position:absolute;
+   width:170px;
+   background:#ffffffdf; 
+   display:none; 
+   padding:20px;
+   left: 150px;
+   top:-25px;
+} 
+
+.snddropmenu-blog li a {
+   color:black;
+   font-size:11x;
+}
+
+.snddropmenu-blog li {
+   padding:5px 0;
+}
+
+
+.snddropdown-blog:hover .snddropmenu-blog {
+   display: block;
+}
+
+
+.heroarea {
+   width: 100%;
+   height: 500px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   margin-top: 50px;
+}
+
+.restaurant {
+   margin-bottom: 120px;
+   font-size: 50px;
+   font-family: "Dancing Script", cursive;
+}
+
+.heroarea h2 {
+   font-size: 36px;
+   font-family: "Caveat", cursive;
+
+}
+
+.heroarea p {
+   font-size: 20px;
+}
+
+.iconbtn {
+   border: 2px solid moccasin;
+   padding: 16px 10px;
+   border-radius: 25px;
+   color: white;
+   background: rgba(0, 0, 0, 0);
+   margin-top: 80px;
+}
+
+.fa-angle-down {
+   font-size: 30px;
+   font-weight: 800;
+}
+
+/* hero area start */
+
+.heroheading {
+   text-align: center;
+   margin-top: 120px;
+
+}
+
+.heroheading h1 {
+   font-size: 30px;
+   font-family: "Caveat", cursive;
+}
+
+.heroheading p {
+   font-size: 20px;
+   font-family: "Mate", serif;
+   color: gray;
+   margin-top: 12px;
+}
+
+.h_border {
+   background: yellowgreen;
+   width: 200px;
+   height: 3px;
+   margin-left: 43%;
+   margin-top: 20px;
+
+}
+
+
+.side-img1 {
+   width: 350px;
+   height: 200px;
+   margin-bottom: 10px;
+}
+
+.side-img {
+   width: 174px;
+   height: 140px;
+   padding: 5px;
+}
+
+.side-images {
+   display: flex;
+   flex-direction: column;
+   margin-right: 20px;
+   /* gap:5px; */
+}
+
+.herosection {
+   display: flex;
+   justify-content: center;
+   margin: 30px
+}
+
+.paragraph {
+   width: 700px;
+   height: 300px;
+   font-size: 22px;
+   font-family: "Mate", serif;
+   margin: auto 0;
+   color: gray;
+   line-height: 1.4;
+}
+
+/* heroarea ending */
+
+.sliderbackground {
+   background: url(./images/slider\ background-img.jpg) no-repeat;
+   width: 100%;
+   height: 750px;
+   background-size: cover;
+   background-attachment: fixed;
+   margin-top: 100px;
+}
+
+.transparent {
+   height: 750px;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.382);
+}
+
+.sliderbackground .sliderheading {
+   text-align: center;
+   padding: 40px;
+}
+
+
+.sliderheading h3 {
+   color: white;
+   font-size: 30px;
+   font-weight: 800;
+   font-family: "Dancing Script", cursive;
+}
+
+.sliderheading p {
+   font-size: 20px;
+   color: white;
+   margin-top: 15px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 500;
+}
+
+.sliderheading img {
+   width: 170px;
+   height: 65px;
+}
+
+
+/* today's specials */
+
+
+.slide-images {
+   width: 920px;
+   height: 360px;
+   background: white;
+   margin: 0 auto;
+
+}
+
+
+.slider-img {
+   width: 350px;
+   height: 360px;
+   margin-right:20px;
+   /* margin-top:-40px; */
+   
+}
+
+
+.slide-images .today-section {
+   display:flex;
+}
+ 
+
+.today-heading h3 {
+   font-size:30px;
+   padding:20px;
+   color:cornflowerblue;
+   font-weight:550;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align:center;
+}
+
+
+.today-heading p {
+   font-size:20px;
+   color:lightslategray;
+   padding:14px;
+   font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+.today-specials {
+   width: 150px;
+   height: 3px;
+   background: green;
+   margin-left:20%;
+}
+
+
+
+.today-btnfirst {
+   padding:10px 20px;
+   font-size:18px;
+   font-weight:bold;
+   margin-left:100px;
+   background:darkseagreen;
+   box-shadow: 1px 2px 3px black;
+}
+
+.today-btnsnd {
+   padding:10px 20px;
+   font-size:18px;
+   font-weight:bold;
+   margin-left:10px;
+   background:lightgray;
+   box-shadow: 1px 2px 3px black;
+}
+
+
+.slick-dots li button:before {
+   font-family: 'slick';
+   font-size: 20px;
+   line-height: 20px;
+   position: absolute;
+   top: 80%;
+   left: 0;
+   width: 20px;
+   height: 20px;
+   content: '•';
+   text-align: center;
+   opacity: .25;
+   color: rgb(11, 11, 217);
+}
+
+.slick-dots li.slick-active button:before {
+   color: yellow;
+}
+
+.slick-dots li button:hover:before {
+   color: crimson;
+}
+
+
+
+.loginheading {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 100px;
+}
+
+
+.loginform {
+   width: 1120px;
+   height: 400px;
+   background: white;
+   border: 1px solid rgba(128, 128, 128, 0.304);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loginheading form {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 40px;
+   padding: 30px;
+}
+
+.inputbox input {
+   height: 45px;
+   width: 300px;
+   padding: 20px;
+   outline: none;
+   border-radius: 10px;
+   background: rgba(128, 128, 128, 0.164);
+   color: gray;
+   border: 1px solid skyblue;
+   box-shadow: 1px 2px 3px;
+   font-size: 15px;
+}
+
+.loginform .inputbox {
+   position: relative;
+}
+
+.inputbox i {
+   position: absolute;
+   right: 10%;
+   top: 50%;
+   font-size: 15px
+}
+
+.reservation {
+   text-align: center;
+
+}
+
+.reservation h1 {
+   color: rgba(85, 107, 47, 0.777);
+   font-family: "Caveat", cursive;
+   margin-bottom: 10px;
+   font-size: 30px;
+}
+
+.reservation h3 {
+   color: rgba(128, 128, 128, 0.511);
+   font-size: 20px;
+   margin-bottom: 5px;
+   font-family: "Mate", serif;
+
+}
+
+.reservation img {
+   width: 180px;
+   height: 35px;
+   margin-bottom: 25px;
+}
+
+.inputbox .lebel {
+   font-size: 18px;
+   margin-bottom: 14px;
+}
+
+.reservation-btn {
+   padding: 15px 28px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   background: rgba(238, 171, 3, 0.875);
+   color: navy;
+   font-size: 23px;
+   font-weight: 400;
+   box-shadow: 2px 3px 5px;
+   text-shadow: 1px 1px 2px;
+   border: 1px solid skyblue;
+}
+
+.orderbtn {
+   margin: 30px auto;
+}
+
+
+.contact {
+   width: 1120px;
+   background: rgba(128, 128, 128, 0.14);
+   text-align: center;
+   padding: 30px 45px;
+   font-size: 22px;
+   font-weight: 500;
+   color: gray;
+   border-bottom: 2px black;
+}
+
+
+
+/* secound slider */
+
+.secoundbg {
+   background: url(./slide-image/secound-background-image.jpg) no-repeat;
+   width: 100%;
+   height: 750px;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   margin-top: 100px;
+}
+
+.features {
+   text-align: center;
+   padding: 40px;
+}
+
+.features h3 {
+   font-size: 32px;
+   color: black;
+   font-weight: 600px;
+   font-family: "Caveat", cursive;
+   margin-bottom: 10px;
+}
+
+.features P {
+   font-size: 22px;
+   font-weight: 200;
+   color: black;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.features img {
+   width: 120px;
+   height: 55px;
+   margin-top: -10px;
+}
+
+
+.serving-trait {
+   width:280px;
+   height:410px;
+   background:#fff;
+   overflow: hidden;
+}
+
+.secoundslider img {
+   width: 100%;
+   height: 170px;
+   position: relative;
+   cursor: pointer;
+}
+
+.serving-trait:hover .serving-img{
+   transform: scale(1.2);
+}
+
+.serving-heading h3 {
+   font-size:20px;
+   color:black;
+   text-align:center;
+   margin-top:25px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.serving-heading p{
+   font-size:14px;
+   color:gray;
+   width:250px;
+   padding: 10px 15px;
+   font-family:Arial, Helvetica, sans-serif;
+   text-align:center;
+}
+
+.our-trait {
+   width:100px;
+   height:3px;
+   background:navy;
+   margin:10px;
+   margin-left:80px;
+}
+
+
+
+.secoundslider {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+/* menu items */
+
+
+.ourmenubar-heading {
+  text-align: center;
+
+
+}
+
+.ourmenubar-heading h3 {
+   font-size:28px;
+   font-family: "Dancing Script", cursive;
+   color:black;
+   margin-top:100px;
+}
+
+
+.ourmenubar-heading p{
+   font-size:19px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color:grey;
+   font-weight: 200;
+   padding-top: 10px;
+}
+
+.ourmenu {
+   width:90px;
+   height:3px;
+   background:blueviolet;
+   margin:15px auto;
+}
+
+
+.foodlistitem {
+   display: flex;
+   justify-content: center;
+   gap:40px; 
+   margin:50px auto;
+}
+
+
+.foodlistitem li {
+   font-size:20px;
+   font-weight: bold;
+   color:gray;
+   list-style: none;
+}
+
+.foodlistitem li:hover {
+   color:black;
+   font-weight: 700;
+   border-bottom:2px solid blueviolet;
+   cursor: pointer;
+}
+
+
+.menuprice {
+   width:250px;
+   height:3px;
+   border:none;
+   border-bottom: 1px dotted gray;
+   margin-top:10px;
+   margin-left:2px;
+}
+
+.ourmenu-heading {
+   display:flex;
+}
+
+
+.menuprising-section {
+   display: flex;
+   justify-content: center;
+   gap:40px;
+}
+
+
+/* ourmenu heading */
+
+
+.ourmenu-heading h4 {
+   font-size:18px;
+   color:#333;
+   font-family:bold;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ourmenu-heading span {
+   font-size:22px;
+   color:gray;
+   font-weight:bold;
+   color:#333;
+}
+
+.heading-part p {
+   font-size:16px;
+   color:gray;
+   font-weight:400;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.heading-part {
+   margin-bottom:55px;
+}
+
+
+.ourmenubtn {
+   padding:19px 28px;
+   font-size:18px;
+   background:goldenrod;
+   font-weight: bold;
+   margin-left:42%;
+   border-radius:20px;
+   text-shadow: 1px 1px 2px;
+   outline: none;
+}
+
+
+.trusted-heading {
+   text-align: center;
+}
+
+.trusted-heading h3 {
+   font-size: 32px;
+   font-weight: bold;
+   color:#333;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-top:100px;
+}
+
+.trusted-heading p {
+   font-size: 20px;
+   color: gray;
+   margin: 13px;
+}
+
+.trusted {
+   width:150px;
+   height:3px;
+   background: green;
+   margin-left:45%;
+}
+
+.trusted-img {
+   width:200px;
+   height:100px;
+}
+
+.trusted-imgbig {
+   width:250px;
+   height:100px;
+}
+
+.trusted-imggroup {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    margin:40px;
+}
+
+
+/* background written slider */
+
+
+.background-written {
+   background: url(./reataurent-img/background-written.webp) no-repeat;
+   width:100% ;
+   height:500px;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.written-transparent {
+   width: 100%;
+   height: 500px;
+   background: rgba(0, 0, 0, 0.74);
+}
+
+
+.written-paragraph {
+   width:800px;
+   margin:50px auto;
+}
+
+
+.written-paragraph .comma {
+   height:50px;
+   width:50px;
+   margin-left:50%;
+   margin-top: 80px;
+}
+
+.background-written .written-paragraph .paragraph-slider p {
+   color:white;
+   font-size: 25px;
+   font-weight: bold;
+   font-family: "Dancing Script", cursive;
+   text-align:center;
+   margin-top: 50px;
+}
+
+
+
+
+.instagram-hrading {
+   text-align: center;
+   margin:80px auto;
+}
+
+
+.instagram-hrading h3 {
+   font-size: 30px;
+   font-weight: bold;
+   color:#333;
+   font-family:  Georgia, Times, 'Times New Roman', serif;
+   margin-bottom: 6px;
+}
+
+
+
+.instagram-hrading p {
+   font-size: 18px;
+   color:gray;
+   font-weight: 800;
+   margin-bottom:10px;
+}
+
+
+.instagram {
+   width:120px;
+   height:3px;
+   background:goldenrod;
+   margin-left: 46%;
+}
+
+
+
+.subscribe {
+   display:flex;
+   gap:40px;
+   margin-left:22%; 
+} 
+
+
+.subscribe h5 {
+   font-size:32px;
+   color:gray;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subscribe p {
+   font-size: 20px;
+   color:gray;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-top:10px;
+}
+
+
+.last-inputbox {
+   display: flex;
+   justify-content: end;
+   margin-right:13%;
+   gap:30px;
+}
+
+.last-inputbox input {
+   padding:14px 30px;
+   outline:none;
+   font-size:15px;
+   color:gray;
+   text-align:center;
+   border:2px solid yellowgreen;
+   
+}
+
+.last-inputbox .fa-angle-right {
+   padding:12px 25px 15px 25px;
+   background:yellowgreen;
+   color:black;
+   font-size:24px;
+   font-weight: bold;
+}
+
+.last-inputbox .fa-angle-right:hover {
+   background:rgb(161, 239, 5);
+}
+
+
+
+/* footer area */
+
+
+.footer-background {
+   background:url(./reataurent-img/footerbg-img.jpg) no-repeat;
+   width:100%;
+   height:550px;
+   background-size:cover;
+   background-position:center;
+   background-attachment:fixed;
+   margin-top:100px;
+}
+
+
+.footer-overlay {
+   width:100%;
+   height:550px;
+   background:rgba(0, 0, 0, 0.749);
+   
+}
+
+
+.footer-flexarea {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   gap:40px; 
+   height:550px;
+}
+
+/* first part */
+
+.first-part {
+   width:330px;
+}
+
+.first-part h3 {
+   font-size:22px;
+   color:yellowgreen;
+   font-weight:bold;
+   margin-bottom:20px;
+}
+
+.first-part p {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.4;
+   margin-bottom: 44px;
+}
+
+.firstpart-icon a {
+   display: flex;
+   align-items: center;
+   gap:3px;
+  
+}
+
+.firstpart-icon h6 {
+   font-size:15px;
+   color:goldenrod;
+}
+
+.firstpart-icon .fa-long-arrow-right {
+   font-size:12px;
+   color:goldenrod;
+}
+
+.firstpart-icon a {
+   text-decoration:none;
+}
+
+.firstpart-icon a:hover h6, .firstpart-icon a:hover .fa-long-arrow-right {
+   color:gray;
+}
+
+/* secound part */
+
+.secound-part {
+   width:330px;
+}
+
+.secound-part h3 {
+   font-size:22px;
+   color:yellowgreen;
+   font-weight:bold;
+   margin-bottom:20px;
+}
+
+.recent-itemimg {
+  
+   align-items: center;
+   gap:20px;
+} 
+
+.snd-firstimg {
+   display:flex;
+   gap:20px;
+}
+
+
+.snd-firstimg img {
+   width:90px;
+   height:70px;
+   margin-bottom:30px;
+}
+
+.snd-firstimg p {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.3;
+   margin-bottom:10px;
+   margin-top: -5px;
+}
+
+.snd-firstimg .date {
+   font-size:14px;
+   color:gray;
+}
+
+.snd-sndimg {
+   display:flex;
+   gap:20px;
+}
+
+
+.snd-sndimg img {
+   width:90px;
+   height:70px;
+}
+
+.snd-sndimg p {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.3;
+   margin-bottom:10px;
+   margin-top: -5px;
+}
+
+.snd-sndimg .date {
+   font-size:14px;
+   color:gray;
+}
+
+/* third part */
+
+.third-part {
+   width:330px;
+}
+
+.third-part h3 {
+   font-size:22px;
+   color:yellowgreen;
+   font-weight:bold;
+   margin-bottom:20px;
+}
+
+.reachicon-group {
+   font-size:20px;
+   background:#333;
+   color:#fff;
+   width:245px;
+   height:40px;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.address {
+   display: flex;
+   gap:20px;
+   margin-bottom: 12px;
+}
+
+.address .fa-map-marker {
+   font-size:20px;
+   color:goldenrod;
+}
+
+.address span {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.3;
+   margin-top: -2px;
+}
+
+.phone {
+   display: flex;
+   gap:20px;
+   margin-bottom: 12px;
+}
+
+.phone .fa-phone {
+   font-size:20px;
+   color:goldenrod;
+}
+
+.phone span {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.3;
+   margin-top: -2px;
+}
+
+.email {
+   display: flex;
+   gap:20px;
+}
+
+.email .fa-envelope-o {
+   font-size:18px;
+   color:goldenrod;
+} 
+
+.email span {
+   font-size:19px;
+   color:#fff;
+   line-height: 1.3;
+   margin-top: -2px;
+}
+
+/* copyright */
+
+.copyright {
+   height:80px;
+   background:#333; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color:#fff;
+}
+
+
