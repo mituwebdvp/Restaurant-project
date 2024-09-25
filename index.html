@@ -9,6 +9,7 @@
    <link rel="stylesheet" type="text/css" href="./library/slick/slick.css"/>
    <!-- // Add the new slick-theme.css if you want the default styling -->
    <link rel="stylesheet" type="text/css" href="./library/slick/slick-theme.css"/>
+   <link rel="stylesheet" href="./library/aos/aos.css"/>
    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
@@ -101,11 +102,14 @@
 
              <section class="heroarea">
                <div class="restaurant">
-                  <h1>Restaurant</h1>
+                  <h1 data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">Restaurant</h1>
                </div>
                   <h2>DELICIOUS FOOD</h2>
                   <P>Country chef is a delicious restaurant website template</P>
-                  <button class="iconbtn"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                  <button class="iconbtn" data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
              </section>
 
          </header>
@@ -117,7 +121,9 @@
          <hr class="h_border">
       </section>
 
-      <section class="herosection">
+      <section class="herosection" data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
          <div class="side-images">
             <img src="./side-img/images1.jpeg" alt="side-img" class="side-img1">
             <div>
@@ -273,7 +279,8 @@
          <div class="secoundslider">
 
 
-            <div class="serving-trait">
+            <div class="serving-trait"  data-aos="fade-up"
+            data-aos-duration="3000">
                <img src="./slide-image/secound1.jpg" alt="slider1" class="serving-img">
                <div class="serving-heading">
                   <h3>SERVING WITH CARE</h3>
@@ -283,7 +290,8 @@
             </div>
 
 
-            <div class="serving-trait">
+            <div class="serving-trait" data-aos="fade-up"
+            data-aos-duration="3000">
                <img src="./slide-image/secound2.jpg" alt="slider2" class="serving-img">
                <div class="serving-heading">
                   <h3>SERVING WITH CARE</h3>
@@ -293,7 +301,8 @@
             </div>
 
 
-            <div class="serving-trait">
+            <div class="serving-trait" data-aos="fade-up"
+            data-aos-duration="3000">
                <img src="./slide-image/secound3.avif" alt="slider3" class="serving-img">
                <div class="serving-heading">
                   <h3>SERVING WITH CARE</h3>
@@ -303,7 +312,8 @@
             </div>
 
 
-            <div class="serving-trait">
+            <div class="serving-trait" data-aos="fade-up"
+            data-aos-duration="3000">
                <img src="./slide-image/secound4.avif" alt="slider4" class="serving-img">
                <div class="serving-heading">
                   <h3>SERVING WITH CARE</h3>
@@ -621,6 +631,12 @@
          });
               
   </script>
+
+   <script src="./library/aos/aos.js"></script>
+
+   <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

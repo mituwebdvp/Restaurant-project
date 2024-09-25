@@ -50,6 +50,7 @@
    position: sticky;
    top: 0;
    height:70px;
+   z-index: 2;
 }
 
 
@@ -70,8 +71,8 @@
 .mainmenu li a {
    text-decoration: none;
    color: white;
-   font-size: 14px;
-   font-weight: 500;
+   font-size: 15px;
+   font-weight: bold;
 }
 
 
@@ -83,7 +84,7 @@
 .dropmenu-home {
    position:absolute;
    width:250px;
-   background:#ffffffe4; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    top:20px;
@@ -115,7 +116,7 @@
 .dropmenu-menubar {
    position:absolute;
    width:190px;
-   background:#ffffffee; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    top:20px;
@@ -147,7 +148,7 @@
 .dropmenu-reservation {
    position:absolute;
    width:250px;
-   background:#ffffffd5; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    top:20px;
@@ -178,7 +179,7 @@
 .dropmenu-pages {
    position:absolute;
    width:180px;
-   background:#fffffff1; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    top:20px; 
@@ -210,7 +211,7 @@
 .dropmenu-blog {
    position:absolute;
    width:200px;
-   background:#ffffffd6; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    top:20px;
@@ -242,7 +243,7 @@
 .snddropmenu-blog {
    position:absolute;
    width:170px;
-   background:#ffffffdf; 
+   background:#ffffff; 
    display:none; 
    padding:20px;
    left: 150px;
@@ -677,6 +678,8 @@
    position: relative;
    cursor: pointer;
 }
+
+
 
 .serving-trait:hover .serving-img{
    transform: scale(1.2);
@@ -1237,6 +1240,124 @@
    align-items: center;
    text-align: center;
    color:#fff;
+}
+
+/* responsive max1024px */
+
+
+@media only screen and (max-width:1024px) {
+
+   body {
+      width:1024px;
+   }
+
+   .paragraph {
+      width: 430px;
+      height: 323px;
+      font-size: 19px;
+      font-family: "Mate", serif;
+      margin: auto 0;
+      color: gray;
+      line-height: 1.4;
+  }
+
+
+.serving-heading p {
+   font-size: 14px;
+   color: gray;
+   width: 226px;
+   padding: 10px 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.serving-heading h3 {
+   font-size: 17px;
+}
+
+.our-trait {
+   width: 100px;
+   height: 3px;
+   background: navy;
+   margin: 10px;
+   margin-left: 60px;
+   /* margin: 0 auto; */
+}
+
+.serving-trait {
+   width: 220px;
+   height: 410px;
+   background: #fff;
+   overflow: hidden;
+}
+
+.menuprice {
+   width: 200px;
+}
+
+
+element.style {
+   width: 620px;
+}
+
+   .loginform {
+      width: 890px;
+      height: 500px;
+  }
+  
+  .contact {
+   width: 890px;
+}
+
+
+
+.slide-images {
+   width: 815px;
+   height: 445px;
+   background: white;
+   margin: 0 auto;
+}
+
+.slider-img {
+   width: 350px;
+   height: 445px;
+   margin-right: 20px;
+   /* margin-top: -40px; */
+}
+
+.today-btnfirst {
+   margin-left: 50px;
+}
+
+
+.today-heading h3 {
+   font-size: 28px;
+}
+
+.today-heading p {
+   font-size: 19px;
+}
+
+
+.today-specials {
+   width: 150px;
+   height: 3px;
+   background: green;
+   margin-left: 30%;
+}
+
+
+.footer-flexarea {
+   width:1024px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+   height: 550px;
+   flex-wrap: wrap;
+}
+
+  
 }
 
 
